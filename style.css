@@ -2,15 +2,20 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f5f5f5; /* Soft background color */
+    color: #333; /* Dark grey text */
 }
+
 header{
-    background-color: #333;
+    background-color: #4a90e2; /* Calm blue header */
     padding: 10px 0;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
+
 .navbar{
     list-style-type: none;
     margin: 0;
@@ -18,27 +23,37 @@ header{
     display: flex;
     justify-content: center;
 }
+
 .navbar li{
     margin: 0 15px;
 }
+
 .navbar a{
     color: white;
     text-decoration: none;
     padding: 10px 20px;
     display: block;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
 }
-.navbar a:hover,.navbar a.active{
-    background-color: #575757;
+
+.navbar a:hover, .navbar a.active{
+    background-color: #357ABD; /* Slightly darker blue for hover */
     border-radius: 5px;
+    color: #f0f0f0; /* Softer white for contrast */
 }
+
 section{
     padding: 100px 20px;
     margin-top: 60px;
     min-height: 100vh;
+    color: #444; /* Dark grey for text */
 }
+
 section:nth-child(even){
-    background-color: white;
+    background-color: #e6f2ff; /* Light blue background for even sections */
 }
+
 section:nth-child(odd){
-    background-color: white;
+    background-color: #ffffff; /* White background for odd sections */
 }
