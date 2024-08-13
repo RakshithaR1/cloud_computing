@@ -1,0 +1,44 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #333;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+.navbar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.navbar li{
+    margin: 0 15px;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+.navbar a:hover,.navbar a.active{
+    background-color: #575757;
+    border-radius: 5px;
+}
+section{
+    padding: 100px 20px;
+    margin-top: 60px;
+    min-height: 100vh;
+}
+section:nth-child(even){
+    background-color: white;
+}
+section:nth-child(odd){
+    background-color: white;
+}
