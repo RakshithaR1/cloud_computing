@@ -2,18 +2,18 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5; /* Soft background color */
-    color: #333; /* Dark grey text */
+    background-color: #f5f5f5; 
+    color: #333; 
 }
 
 header{
-    background-color: #4a90e2; /* Calm blue header */
+    background-color: #4a90e2; 
     padding: 10px 0;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .navbar{
@@ -38,22 +38,22 @@ header{
 }
 
 .navbar a:hover, .navbar a.active{
-    background-color: #357ABD; /* Slightly darker blue for hover */
+    background-color: #357ABD; 
     border-radius: 5px;
-    color: #f0f0f0; /* Softer white for contrast */
+    color: #f0f0f0; 
 }
 
 section{
     padding: 100px 20px;
     margin-top: 60px;
     min-height: 100vh;
-    color: #444; /* Dark grey for text */
+    color: #444; 
 }
 
 section:nth-child(even){
-    background-color: #e6f2ff; /* Light blue background for even sections */
+    background-color: #e6f2ff; 
 }
 
 section:nth-child(odd){
-    background-color: #ffffff; /* White background for odd sections */
+    background-color: #ffffff; 
 }
