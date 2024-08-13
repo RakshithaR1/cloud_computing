@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Modern font choice */
+    background: url('https://cache.careers360.mobi/media/article_images/2023/6/26/RV-University-admissions-featured-image.jpg') no-repeat center center fixed; /* Background image */
+    background-size: cover; /* Cover the entire viewport */
+    color: #333; /* Default text color */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: rgba(30, 136, 229, 0.8); /* Slightly transparent background for navbar */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Deeper shadow for enhanced depth */
+}
+
+.navbar-brand {
+    font-weight: 700; /* Bolder text */
+    color: #ffffff !important; /* White color for contrast */
+    text-transform: uppercase;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    margin-left: 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #1565c0; /* Darker blue on hover */
+    color: #ffffff !important;
+    border-radius: 4px;
+    padding: 8px 15px;
+}
+
+/* Jumbotron Styles */
+.jumbotron {
+    background: linear-gradient(135deg, rgba(255, 223, 186, 0.8), rgba(255, 204, 128, 0.8)); /* Lighter gradient from pale orange to light gold */
+    color: #ffffff; /* White text for contrast */
+    padding: 80px 40px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    /* Add a semi-transparent background to improve text readability */
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.jumbotron h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: #0d47a1; /* Darker blue for better readability */
+}
+
+.jumbotron p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    color: #0d47a1; /* Darker blue for better readability */
+}
+
+/* Typography */
+h1, h2 {
+    margin-top: 40px;
+    color: #0d47a1; /* Darker blue color for better readability */
+    font-weight: 600;
+    text-align: center;
+}
+
+p {
+    margin-top: 15px;
+    color: #ffffff; /* White color for better readability on dark backgrounds */
+    text-align: justify;
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgba(30, 136, 229, 0.8); /* Slightly transparent background for footer */
+    color: #ffffff;
+    padding: 30px 0;
+    text-align: center;
+    border-top: 5px solid #ffdd57; /* Lighter yellow accent */
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Custom Button Styles */
+.btn-custom {
+    background-color: #ffdd57; /* Light yellow button */
+    color: #ffffff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-custom:hover {
+    background-color: #fbc02d; /* Slightly darker yellow on hover */
+    transform: translateY(-2px); /* Subtle lift effect */
+}
+
+/* Custom Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.jumbotron, h1, h2, p, .btn-custom {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Responsive Design Tweaks */
+@media (max-width: 768px) {
+    .jumbotron h1 {
+        font-size: 3rem;
+    }
+
+    .jumbotron p {
+        font-size: 1.1rem;
+    }
+
+    h1, h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1.4rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
+
+    .jumbotron {
+        padding: 60px 20px;
+    }
+
+    .jumbotron h1 {
+        font-size: 2.5rem;
+    }
+}

@@ -1,14 +1,17 @@
-window.addEventListener('scroll', function() {
-    var navItems = document.querySelectorAll('.nav-item');
-    var sections = document.querySelectorAll('section');
+// Contact Form Submission Handler
+$(document).ready(function() {
+    $('#contact-form').on('submit', function(event) {
+        event.preventDefault();
+        var name = $('#name').val();
+        var email = $('#email').val();
+        var message = $('#message').val();
 
-    sections.forEach(function(section, index) {
-        var rect = section.getBoundingClientRect();
-        if (rect.top >= 0 && rect.top <= window.innerHeight / 2) {
-            navItems.forEach(function(item) {
-                item.classList.remove('active');
-            });
-            navItems[index].classList.add('active');
+        if (name && email && message) {
+            alert('Thank you for contacting us, ' + name + '! We will get back to you shortly.');
+            // Reset form fields
+            $('#contact-form')[0].reset();
+        } else {
+            alert('Please fill out all fields.');
         }
     });
 });
